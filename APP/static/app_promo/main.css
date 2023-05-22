@@ -1,0 +1,192 @@
+body {
+    background-color: palegoldenrod;
+}
+.admin-nav {
+    background-color: black;
+    color: white;
+    text-align: center;
+   
+   
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 4px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: fantasy;
+    
+
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+section  ul li {
+    border: 2px solid black;
+    list-style: none;
+    background-color: lightskyblue;
+    border-radius: 32px;
+    overflow: hidden;
+    
+    width: 17vw;
+    height: 18vw;
+    
+}
+
+li img {
+    
+    padding-right: 6px;
+    padding-left: 4vw;
+    padding-top: 2.5vh;
+   
+    
+}
+
+
+
+.app-point {
+    border: 2px solid black;
+    padding: 4px;
+    background-color: hsl(80, 61%, 50%);
+    font-weight: bolder;
+    color:   black;
+    display: inline-block;
+    break-inside: avoid;
+    break-before: column;
+    margin-left: 1vw;
+    
+   
+    
+}
+
+
+
+
+
+.app-delete{
+
+    border: 2px solid black;
+    background-color: hsl(80, 61%, 50%);
+    padding: 4px;
+    font-weight: bolder;
+    color:   black;
+    margin-inline: 6px;
+    break-inside: avoid;
+    break-before: column;
+    
+ 
+
+
+}    
+    
+
+.app-delete:hover{
+    background: hsl(108, 61%, 50%);
+    text-decoration: none;break-inside:
+}
+
+.app-update {
+
+    border: 2px solid black;
+    background-color: yellowgreen;
+    padding: 4px;
+    font-weight: bolder;
+    color:  black;
+    display: inline-block;
+    margin-left: 1vw;
+     
+    break-before: column;
+}
+
+.app-update:hover,.app-point:fo{
+    background:  hsl(108, 61%, 50%);
+    text-decoration: none;
+}
+
+.app-name a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+.app-name{
+    border: 2px solid black;
+    padding: 4px;
+    background-color: hsl(80, 61%, 50%);
+    font-weight: bolder;
+    color:   black;
+    /* margin-inline: 6px;   */
+    break-inside: avoid;
+    break-before: column;
+    display: inline-block;
+    margin-left: 4.9vw;
+
+   
+}
+
+
+
+.container {
+    
+    column-count: 3;
+    
+    
+    
+}
+
+.hello {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: fantasy;
+}
+
+
+
+
+
+.app {
+    display: inline-block;
+    margin-left: 8rem;
+}
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+.completed {
+    border: 2px solid black;
+    background: aqua;
+    list-style: decimal;
+    height: 25px;
+    width: 30%;
+    /* margin: auto; */
+    padding: 8px;
+    
+}
+
+.c {
+    color: blue;
+    font-weight: bolder;
+}
+
+.profile-image {
+    border: 4px double blue;
+    outline: 2px solid purple;
+    outline-offset: -2px;
+    border-radius: 100px;
+   
+}
+
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+{% extends 'app_promo/base.html' %}
+
+{% block a %}Points Earned{% endblock%}
+
+{% block b %}
+  <h2 class="c">Completed Tasks</h2>
+  <ul>
+    {% for app in completed_apps %}
+      <li class="completed">{{ app.app.app_name }} - {{ app.app.app_point }} points</li>
+      <br>
+    {% empty %}
+      <li>No completed tasks found.</li>
+    {% endfor %}
+  </ul>
+{% endblock %}

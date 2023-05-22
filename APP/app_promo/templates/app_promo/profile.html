@@ -1,0 +1,31 @@
+{% extends 'app_promo/base.html' %}
+
+{%  load crispy_forms_tags %}
+
+{% block a %}{{user.username}}{% endblock %}
+
+
+
+{%block b %}
+
+<div class="profile">
+  <div class="profile-picture">
+    <img class="profile-image" width="300" height="300" src="{{user.profile.image.url }}" alt="Profile Picture">
+  </div>
+  <div class="profile-info">
+    <h2 class="Username">Username: {{ user.username }}</h2>
+    <h3 class="TOTAL-POINTS">TOTAL POINTS: {{user.total_points}}</h3>
+  </div>
+</div>
+
+
+{%endblock%}
+
+
+
+
+
+
+
+
+

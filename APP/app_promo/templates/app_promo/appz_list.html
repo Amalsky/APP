@@ -1,0 +1,40 @@
+{% extends 'app_promo/base.html' %}
+
+{%block a %}promo{%endblock%}
+
+{% block b %}
+
+
+   
+
+  <!-- <section class="container">
+    <ul>
+      {% for object in object_list %}
+      <li class="li"><img src="{{object.app_icon.url}}" width="100" height="100" loading="lazy" alt="icon">class="app-name"><a href="#">{{object.app_name}}</a>
+        <p class="no-wrap"><span class="app-point">{{object.app_point}}</span> 
+          <a class="app-delete"  href="{% url 'upload_document' object.id %}">Upload Screenshot</a></li></p>
+        {% endfor %}   
+    </ul>
+  </section> -->
+
+  <section class="container">
+    <ul>
+      {% for object in object_list %}
+
+      <li class="box"><img src="{{object.app_icon.url}}" class="app-icon" width=100, height="100" alt="app icon"/><a class="app-name" href="#">{{object.app_name}}</a><span class="app-point">{{object.app_point}}</span>
+      <p>{{object.get_app_category_display}}</p><p> <a href="{% url 'upload_document' object.id %}" class="Screenshot">Upload Snapshot</a></p></li>
+      <br>
+      <br>
+      
+      {% endfor %}   
+    </ul>
+  </section>
+
+
+
+
+
+
+
+
+{% endblock %}

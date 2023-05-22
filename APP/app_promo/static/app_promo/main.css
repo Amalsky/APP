@@ -1,0 +1,295 @@
+body {
+    background-color: palegoldenrod;
+}
+
+/* nav bar css */
+.admin-nav {
+    background-color: black;
+    color: white;
+    text-align: center;
+   
+   
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 4px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: fantasy;
+    
+
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+/* first box item margin css */
+section li:first-child {
+    
+    margin-top: 5%;
+}
+
+
+/* container box css  */
+.box {
+    border: 2px solid black;
+    list-style: none;
+    background-color: lightskyblue;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 50%;
+    margin: auto;
+    height: 10%;
+    position: relative;
+
+}
+
+/* app icon css */
+
+.app-icon {
+    padding-left: 2em;
+    padding-top:1em ;
+    padding-bottom: 1rem;
+    padding-right: 0%;
+    float: left;
+    
+}
+
+/* app name css */
+
+.app-name {
+    font-weight: bolder;
+    padding-left: 7rem;
+    font-size: xx-large;
+    color: black;
+
+}
+
+.app-name:hover {
+    color: blue;
+    text-decoration: none;
+}
+
+/* app point css */
+
+.app-point {
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-bottom: 1px;
+    border: 2px solid black;
+    background: grey;
+    display: inline-block;
+    height: 24px;
+    width: 60px;
+    position: absolute;
+    top: 40px; 
+    right: 80px; 
+    font-size: large;
+    font-weight: bolder
+    
+    }
+    
+    
+
+/* screenshot link css */
+
+.Screenshot {
+    border: 2px solid black;
+    background: grey;
+    font-size: large;
+    font-weight: bolder;
+    color: black;
+    padding-left: 6px;
+    padding-right: 6px; 
+    position: absolute;
+    top: 99px; 
+    right: 240px;
+    text-decoration: none;
+    background: hsla(0, 100%, 50%, 0.719);;
+    
+    
+    
+}
+    
+
+.Screenshot:hover{
+    background: hsl(0, 100%, 50%);
+    text-decoration: none;
+}
+
+/* profile page css */
+
+/* outer box */
+.profile {
+    border: 2px solid black;
+}
+
+.profile-image{
+   
+    border: 1px solid black;
+    order: 2px solid red;
+    height: 300px;
+    width: 300px;
+    border-radius: 250px;
+    
+}
+
+.profile-picture{
+    padding:10px;
+    
+}
+
+.Username{
+    font-weight: bolder;
+    
+}
+
+
+/* completed task  page css*/
+
+.completed {
+    border: 8px double red;
+    outline: 4px solid purple;
+    outline-offset: -4px;
+    width: 50%;
+    list-style: decimal;
+    font-weight: bolder;
+    padding-left: 4px;
+    background: aqua;
+
+}
+
+/* log out page */
+
+.login-redrict{
+    font-weight: bolder;
+    font-size: x-large;
+    
+    
+}
+
+.login-redrict:hover{
+    color: red;
+    text-decoration: none;
+
+}
+
+/* button css login logout signup create  */
+
+.buttonz{
+    border: 2px solid black;
+    background: hsl(0, 0%, 50%);
+    padding: 6px;
+    font-size: medium;
+    margin-top: 8px;
+    height: 35px;
+    width: 70px;
+}
+
+.buttonz:hover {
+    background:hsla(0, 0%, 50%, 0.678);
+}
+
+
+/* admin page */
+
+.hello {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: fantasy;
+}
+
+
+
+.app {
+    display: inline-block;
+    margin-left: 8rem;
+}
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+/* app create page css  */
+
+.name {
+    height: 30px;
+    width: 50%;
+    border: 2px solid black;
+    font-weight: bolder;
+    background: beige;
+    margin-bottom: 20px;
+}
+
+.category {
+
+    height: 30px;
+    width: 50%;
+    border: 2px solid black;
+    font-weight: bolder;
+    background: beige;
+    margin-bottom: 20px;
+
+}
+
+.apppoint {
+
+    height: 30px;
+    width: 50%;
+    border: 2px solid black;
+    font-weight: bolder;
+    background: beige;
+    margin-bottom: 20px;
+
+} 
+
+.icon {
+
+    height: 30px;
+    width: 50%;
+    border: 2px solid black;
+    font-weight: bolder;
+    background: beige;
+    margin-bottom: 20px;
+
+}
+
+    
+    
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

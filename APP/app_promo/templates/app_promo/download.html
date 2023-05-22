@@ -1,0 +1,31 @@
+{% extends 'app_promo/base.html' %}
+{% load static %}
+{% block a %}screenshot{% endblock %}
+
+{% block b %}
+
+<form
+  action="{% url 'upload_document' pk=app.pk %}"
+  method="post"
+  class="dropzone"
+  id="MyDropZone"
+>
+  {% csrf_token %}
+
+  <button class= "buttonz" type="submit" id="upload-button" required >Upload</button>
+
+</form>
+
+<script>
+  Dropzone.options.MyDropZone = {
+    // Other Dropzone configuration options...
+    autoProcessQueue: false
+};
+
+document.getElementById("upload-button").addEventListener("click", function() {
+    myDropzone.processQueue();
+});
+
+</script>
+
+{% endblock %}

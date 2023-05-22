@@ -1,0 +1,16 @@
+{% extends 'app_promo/admin_base.html'%}
+{% load crispy_forms_tags %}
+
+
+   {%block b%}
+   
+      <form  class="formzz" method="post">
+         {% csrf_token %}
+         
+            {{form|crispy}}
+            
+         <button  class="buttonz" type="submit">Create</button>
+     </form>
+   
+    
+    {% endblock %}

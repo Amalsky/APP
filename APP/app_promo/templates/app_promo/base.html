@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block a %} {% endblock %}</title>
+    <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
+   
+    <link rel="stylesheet" href="{% static 'app_promo/main.css' %}">
+    
+    
+</head>
+<body>
+<header>
+    <nav class="admin-nav">
+        <ul>
+            <li><a href="{% url 'list' %}">Home</a> </li><span class="bar">|</span>
+            <li ><a href="{% url 'profile' %}">Profile</a> </li><span class="bar">|</span>
+            <li ><a href="{% url 'completed_tasks' %}">Completed Task</a></li><span class="bar">|</span>
+            {% if user.is_authenticated %}
+               <li class="logout"><a href="{% url 'logout' %}">Logout</a></li>
+
+        {%else%}
+            <li class="login"><a href="{% url 'login' %}">Login</a></li>|
+            <li class="login"><a href="{% url 'signup' %}">signup</a></li>
+        {% endif %} 
+        {% if request.user.is_admin%} 
+        |<li class="adminpage"><a href="{% url 'admin_page' %}">Admin Page</a></li> 
+        {% endif %} 
+
+        </ul>
+
+    
+    </nav>
+</header>
+<main>
+    {% block b %} {% endblock %}
+</main>
+
+</body>
+</html>
